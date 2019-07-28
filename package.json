@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "filehound": "^1.17.3",
+    "morgan": "^1.9.1",
     "prettier": "^1.18.2",
     "sequelize": "^5.10.1",
     "sqlite3": "^4.0.9"
@@ -23,7 +26,8 @@
     "eslint-plugin-react": "^7.14.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon ./server/app.js"
   },
   "author": "",
   "license": "ISC"
