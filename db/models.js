@@ -59,12 +59,16 @@ const loan = sequelize.define("loan", {
     type: Sequelize.INTEGER,
     allowNull: false
   },
+  rate: {
+    type: Sequelize.FLOAT,
+    defaultValue: 0.02
+  },
   status: {
-    type: Sequelize.BOOLEAN,
+    type: Sequelize.INTEGER,
     defaultValue: false
   },
   deleted: {
-    type: Sequelize.TINYINT,
+    type: Sequelize.BOOLEAN,
     defaultValue: 0,
     allowNull: false
   }
